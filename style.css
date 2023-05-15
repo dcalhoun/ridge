@@ -1,0 +1,94 @@
+/*
+Theme Name: Ridge
+Theme URI: https://davidcalhoun.me
+Author: David Calhoun
+Author URI: https://davidcalhoun.me
+Description: Quiet.
+Tags: blog
+Version: 0.1
+Requires at least: 6.0
+Tested up to: 6.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ridge
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Elements */
+::selection {
+  background-color: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--background);
+}
+
+code {
+  background-color: var(--wp--preset--color--shadow);
+  border: 1px solid var(--wp--preset--color--outline);
+  border-radius: var(--wp--custom--radius);
+  font-size: 0.875em;
+  padding: 0.125em;
+}
+
+pre {
+  padding: 0;
+}
+
+pre > code {
+  padding: 1em;
+}
+
+/* Navigation */
+@media (max-width: 599px) {
+  .wp-block-navigation {
+    font-size: var(--wp--preset--font-size--x-large);
+  }
+}
+
+/* Post Comments */
+.wp-block-post-comments-form textarea {
+  background-color: var(--wp--preset--color--shadow);
+  border: 1px solid var(--wp--preset--color--outline);
+  border-radius: var(--wp--custom--radius);
+}
+
+.wp-block-post-comments-form textarea:focus {
+  border-color: var(--wp--preset--color--primary);
+  box-shadow: 0 0 0 1px var(--wp--preset--color--primary);
+}
+
+/* Post Date */
+.wp-block-post-date {
+  display: inline-block;
+}
+
+.edit-post-visual-editor__post-title-wrapper
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: var(--wp--style--global--wide-size) !important;
+  text-align: center;
+}
+
+/* Search */
+@media (max-width: 599px) {
+  .wp-block-search {
+    display: none;
+  }
+}
+
+.wp-block-search__input {
+  background-color: var(--wp--preset--color--shadow);
+  border: 1px solid var(--wp--preset--color--outline);
+  border-radius: var(--wp--custom--radius);
+}
+
+.wp-block-search__input:focus {
+  border-color: var(--wp--preset--color--primary);
+  box-shadow: 0 0 0 1px var(--wp--preset--color--primary);
+}
+
+/* Separator */
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+  border-width: 1px;
+  opacity: 0.5;
+  width: clamp(4rem, 11vw, 12rem);
+}

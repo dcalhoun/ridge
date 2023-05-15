@@ -1,0 +1,167 @@
+<?php
+/**
+ * Ridge functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Ridge
+ * @since Ridge 1.0
+ */
+
+if (!function_exists("ridge_setup")):
+    /**
+     * Sets up theme defaults and registers support for various WordPress features.
+     *
+     * @since Ridge 1.0
+     *
+     * @return void
+     */
+    function ridge_setup() {
+        // Add support for block styles.
+        add_theme_support("wp-block-styles");
+
+        // Enqueue editor styles.
+        add_editor_style("style.css");
+
+        // Add support for Global Style settings.
+        add_theme_support("appearance-tools");
+    }
+endif;
+
+add_action("after_setup_theme", "ridge_setup");
+
+if (!function_exists("ridge_styles")):
+    /**
+     * Enqueue styles.
+     *
+     * @since Ridge 1.0
+     *
+     * @return void
+     */
+    function ridge_styles() {
+        $theme_version = wp_get_theme()->get("Version");
+        $version_string = is_string($theme_version) ? $theme_version : false;
+
+        // Register theme stylesheet.
+        wp_register_style(
+            "ridge-style",
+            get_template_directory_uri() . "/style.css",
+            [],
+            $version_string,
+        );
+
+        // Enqueue theme stylesheet.
+        wp_enqueue_style("ridge-style");
+    }
+endif;
+
+add_action("wp_enqueue_scripts", "ridge_styles");
+
+/**
+ * Disable the emojis to improve performance.
+ */
+function disable_emojis() {
+    remove_action("wp_head", "print_emoji_detection_script", 7);
+    remove_action("admin_print_scripts", "print_emoji_detection_script");
+    remove_action("wp_print_styles", "print_emoji_styles");
+    remove_action("admin_print_styles", "print_emoji_styles");
+    remove_filter("the_content_feed", "wp_staticize_emoji");
+    remove_filter("comment_text_rss", "wp_staticize_emoji");
+    remove_filter("wp_mail", "wp_staticize_emoji_for_email");
+    add_filter(
+        "wp_resource_hints",
+        "disable_emojis_remove_dns_prefetch",
+        10,
+        2,
+    );
+}
+add_action("init", "disable_emojis");
+
+/**
+ * Remove emoji CDN hostname from DNS prefetching hints.
+ *
+ * @param array $urls URLs to print for resource hints.
+ * @param string $relation_type The relation type the URLs are printed for.
+ * @return array Difference betwen the two arrays.
+ */
+function disable_emojis_remove_dns_prefetch($urls, $relation_type) {
+    if ("dns-prefetch" == $relation_type) {
+        /** This filter is documented in wp-includes/formatting.php */
+        $emoji_svg_url = apply_filters(
+            "emoji_svg_url",
+            "https://s.w.org/images/core/emoji/2/svg/",
+        );
+
+        $urls = array_diff($urls, [$emoji_svg_url]);
+    }
+
+    return $urls;
+}
+
+/**
+ * Add non-movable Post Featured Image block to further align block editor and
+ * website presentation.
+ */
+function inline_post_featured_image($post_type) {
+    $post_type_object = get_post_type_object($post_type);
+    $post_type_object->template = [
+        [
+            "core/post-featured-image",
+            [
+                "align" => "wide",
+                "lock" => ["move" => "true"],
+            ],
+        ],
+        [
+            "core/post-excerpt",
+            [
+                "className" => "is-style-sans-link",
+                "fontSize" => "x-large",
+                "lock" => ["move" => "true"],
+            ],
+        ],
+        ["core/paragraph"],
+    ];
+}
+add_action("init", function () {
+    inline_post_featured_image("page");
+    inline_post_featured_image("post");
+});
+
+/**
+ * Customize the block editor for the theme.
+ */
+function ridge_editor_modifications() {
+    $theme_version = wp_get_theme()->get("Version");
+    $version_string = is_string($theme_version) ? $theme_version : false;
+
+    wp_register_script(
+        "ridge_editor_modifications",
+        get_stylesheet_directory_uri() . "/scripts/editor-modifications.js",
+        ["wp-edit-post"],
+        $version_string,
+        true,
+    );
+
+    register_block_type("ridge/editor-modifications", [
+        "editor_script" => "ridge_editor_modifications",
+    ]);
+}
+add_action("init", "ridge_editor_modifications");
+
+/**
+ * Register core block styles.
+ */
+function ridge_block_styles() {
+    if (!function_exists("register_block_style")) {
+        return;
+    }
+
+    register_block_style("core/post-excerpt", [
+        "name" => "sans-link",
+        "label" => __("Sans Link", "ridge"),
+        "inline_style" =>
+            ".wp-block-post-excerpt.is-style-sans-link .wp-block-post-excerpt__more-text { display: none; }",
+    ]);
+}
+add_action("init", "ridge_block_styles");
