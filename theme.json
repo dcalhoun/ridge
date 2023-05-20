@@ -142,7 +142,7 @@
         },
         {
           "name": "X-Large",
-          "size": "clamp(1.875rem, 2vw, 2.5rem)",
+          "size": "clamp(1.375rem, 2vw, 2.5rem)",
           "slug": "x-large"
         },
         {
