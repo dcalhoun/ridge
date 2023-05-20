@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "node bin/zip.js",
     "format": "prettier -w .",
     "wp-env": "wp-env"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.19.1",
     "@wordpress/env": "^5.4.0",
+    "archiver": "^5.3.1",
     "prettier": "^2.7.1"
   }
 }
