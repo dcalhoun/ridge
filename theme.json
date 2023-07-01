@@ -182,8 +182,7 @@
       },
       "core/post-date": {
         "color": {
-          "background": "var(--wp--preset--color--shadow)",
-          "text": "var(--wp--preset--color--foreground)"
+          "background": "var(--wp--preset--color--shadow)"
         },
         "border": {
           "radius": "var(--wp--custom--radius)"
