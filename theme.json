@@ -350,6 +350,11 @@
       "title": "Header"
     },
     {
+      "area": "content",
+      "name": "loop",
+      "title": "Loop"
+    },
+    {
       "area": "footer",
       "name": "footer",
       "title": "Footer"
