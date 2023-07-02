@@ -99,57 +99,6 @@ function disable_emojis_remove_dns_prefetch($urls, $relation_type) {
 }
 
 /**
- * Add non-movable Post Featured Image block to further align block editor and
- * website presentation.
- */
-function inline_post_featured_image($post_type) {
-    $post_type_object = get_post_type_object($post_type);
-    $post_type_object->template = [
-        [
-            "core/post-featured-image",
-            [
-                "align" => "wide",
-                "lock" => ["move" => "true"],
-            ],
-        ],
-        [
-            "core/post-excerpt",
-            [
-                "className" => "is-style-sans-link",
-                "fontSize" => "x-large",
-                "lock" => ["move" => "true"],
-            ],
-        ],
-        ["core/paragraph"],
-    ];
-}
-add_action("init", function () {
-    inline_post_featured_image("page");
-    inline_post_featured_image("post");
-});
-
-/**
- * Customize the block editor for the theme.
- */
-function ridge_editor_modifications() {
-    $theme_version = wp_get_theme()->get("Version");
-    $version_string = is_string($theme_version) ? $theme_version : false;
-
-    wp_register_script(
-        "ridge_editor_modifications",
-        get_stylesheet_directory_uri() . "/scripts/editor-modifications.js",
-        ["wp-edit-post"],
-        $version_string,
-        true,
-    );
-
-    register_block_type("ridge/editor-modifications", [
-        "editor_script" => "ridge_editor_modifications",
-    ]);
-}
-add_action("init", "ridge_editor_modifications");
-
-/**
  * Register core block styles.
  */
 function ridge_block_styles() {
