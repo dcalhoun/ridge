@@ -209,6 +209,23 @@
           "fontSize": "var(--wp--preset--font-size--medium)"
         }
       },
+      "core/query-pagination": {
+        "elements": {
+          "link": {
+            "typography": {
+              "textDecoration": "none"
+            }
+          }
+        },
+        "spacing": {
+          "margin": {
+            "top": "0"
+          }
+        },
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--medium)"
+        }
+      },
       "core/search": {
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--primary)",
