@@ -174,19 +174,8 @@
         }
       },
       "core/post-date": {
-        "color": {
-          "background": "var(--wp--preset--color--shadow)"
-        },
-        "border": {
-          "radius": "var(--wp--custom--radius)"
-        },
-        "spacing": {
-          "padding": {
-            "top": "0.125rem",
-            "right": "var(--wp--custom--radius)",
-            "bottom": "0.125rem",
-            "left": "var(--wp--custom--radius)"
-          }
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--medium)"
         }
       },
       "core/post-excerpt": {
