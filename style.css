@@ -69,12 +69,6 @@ pre > code {
 }
 
 /* Search */
-@media (max-width: 599px) {
-  .wp-block-search {
-    display: none;
-  }
-}
-
 .wp-block-search__input {
   background-color: var(--wp--preset--color--shadow);
   border: 1px solid var(--wp--preset--color--outline);
