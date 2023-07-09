@@ -62,12 +62,6 @@ pre > code {
   display: inline-block;
 }
 
-.edit-post-visual-editor__post-title-wrapper
-  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-  max-width: var(--wp--style--global--wide-size) !important;
-  text-align: center;
-}
-
 /* Search */
 .wp-block-search__input {
   background-color: var(--wp--preset--color--shadow);
