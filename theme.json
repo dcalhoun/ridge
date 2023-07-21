@@ -386,7 +386,7 @@
 			"title": "Horizontal Post Navigation"
 		},
 		{
-			"area": "content",
+			"area": "posts",
 			"name": "loop",
 			"title": "Loop"
 		}
