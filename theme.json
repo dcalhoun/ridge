@@ -381,6 +381,11 @@
 			"title": "Header"
 		},
 		{
+			"area": "posts",
+			"name": "horizontal-post-navigation",
+			"title": "Horizontal Post Navigation"
+		},
+		{
 			"area": "content",
 			"name": "loop",
 			"title": "Loop"
