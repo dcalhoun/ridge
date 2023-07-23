@@ -64,8 +64,10 @@ pre > code {
 
 /* Post Navigation Link */
 .wp-block-post-navigation-link.is-style-bar {
-  border-bottom: 1px solid var(--wp--preset--color--outline);
   width: 100%;
+}
+.wp-block-post-navigation-link.is-style-bar:not(:empty) {
+  border-bottom: 1px solid var(--wp--preset--color--outline);
 }
 
 .wp-block-post-navigation-link.is-style-bar:first-of-type {
