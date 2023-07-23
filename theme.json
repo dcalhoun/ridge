@@ -382,8 +382,8 @@
 		},
 		{
 			"area": "posts",
-			"name": "horizontal-post-navigation",
-			"title": "Horizontal Post Navigation"
+			"name": "post-navigation-stacked",
+			"title": "Post Navigation Stacked"
 		},
 		{
 			"area": "posts",
