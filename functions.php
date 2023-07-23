@@ -112,5 +112,11 @@ function ridge_block_styles() {
         "inline_style" =>
             ".wp-block-post-excerpt.is-style-sans-link .wp-block-post-excerpt__more-text { display: none; }",
     ]);
+
+    register_block_style("core/post-navigation-link", [
+        "name" => "bar",
+        "label" => __("Bar", "ridge"),
+        "style_handle" => "ridge-style",
+    ]);
 }
 add_action("init", "ridge_block_styles");
