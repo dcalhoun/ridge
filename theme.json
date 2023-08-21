@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.2/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.3/theme.json",
 	"customTemplates": [
 		{
 			"name": "hidden-title",
@@ -177,12 +177,12 @@
 	"styles": {
 		"blocks": {
 			"core/code": {
-				"color": {
-					"background": "var(--wp--preset--color--shadow)"
-				},
 				"border": {
 					"color": "var(--wp--preset--color--outline)",
 					"radius": "var(--wp--custom--radius)"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--shadow)"
 				}
 			},
 			"core/navigation": {
