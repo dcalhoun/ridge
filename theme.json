@@ -177,16 +177,12 @@
 	"styles": {
 		"blocks": {
 			"core/code": {
-				"border": {
-					"width": "0"
+				"color": {
+					"background": "var(--wp--preset--color--shadow)"
 				},
-				"spacing": {
-					"padding": {
-						"bottom": "0",
-						"left": "0",
-						"right": "0",
-						"top": "0"
-					}
+				"border": {
+					"color": "var(--wp--preset--color--outline)",
+					"radius": "var(--wp--custom--radius)"
 				}
 			},
 			"core/navigation": {

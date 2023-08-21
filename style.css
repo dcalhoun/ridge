@@ -22,20 +22,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   color: var(--wp--preset--color--background);
 }
 
-code {
+code:not(pre > code) {
   background-color: var(--wp--preset--color--shadow);
   border: 1px solid var(--wp--preset--color--outline);
   border-radius: var(--wp--custom--radius);
   font-size: 0.875em;
   padding: 0.125em;
-}
-
-pre {
-  padding: 0;
-}
-
-pre > code {
-  padding: 1em;
 }
 
 /* Navigation */
