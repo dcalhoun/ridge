@@ -158,12 +158,12 @@
 				},
 				{
 					"name": "Large",
-					"size": "clamp(1.25rem, 3.5vw, 2rem)",
+					"size": "clamp(1.25rem, 2vw, 2rem)",
 					"slug": "large"
 				},
 				{
 					"name": "X-Large",
-					"size": "clamp(1.375rem, 2vw, 2.5rem)",
+					"size": "clamp(1.375rem, 3.5vw, 2.5rem)",
 					"slug": "x-large"
 				},
 				{
