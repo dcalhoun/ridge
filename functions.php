@@ -17,9 +17,6 @@ if (!function_exists("ridge_setup")):
      * @return void
      */
     function ridge_setup() {
-        // Add support for block styles.
-        add_theme_support("wp-block-styles");
-
         // Enqueue editor styles.
         add_editor_style("style.css");
 
