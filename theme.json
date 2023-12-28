@@ -210,11 +210,6 @@
 			},
 			"core/post-template": {
 				"elements": {
-					"h2": {
-						"typography": {
-							"fontSize": "var(--wp--preset--font-size--medium)"
-						}
-					},
 					"link": {
 						"typography": {
 							"textDecoration": "none"
@@ -225,11 +220,6 @@
 			"core/post-terms": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
-				}
-			},
-			"core/post-title": {
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--xx-large)"
 				}
 			},
 			"core/query-pagination": {
