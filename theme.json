@@ -195,7 +195,8 @@
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--alternate)",
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "500"
 				}
 			},
 			"core/post-date": {
@@ -271,7 +272,9 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--large)"
+					"fontFamily": "var(--wp--preset--font-family--alternate)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "bold"
 				}
 			}
 		},
