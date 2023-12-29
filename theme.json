@@ -274,7 +274,9 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--alternate)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"letterSpacing": "0.2em",
+					"textTransform": "uppercase"
 				}
 			}
 		},
