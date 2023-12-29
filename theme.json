@@ -342,6 +342,16 @@
 				}
 			},
 			"link": {
+				":focus": {
+					"border": {
+						"radius": "var(--wp--custom--radius)"
+					}
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
 				"color": {
 					"text": "var(--wp--preset--color--primary)"
 				}
