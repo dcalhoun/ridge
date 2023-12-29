@@ -51,7 +51,8 @@ code:not(pre > code) {
 }
 
 /* Image */
-.wp-block-image.is-style-rounded img {
+/* Double `is-style-rounded` class to override apparent WPCOM collision */
+.wp-block-image.is-style-rounded.is-style-rounded img {
   border-radius: var(--wp--custom--radius);
 }
 
