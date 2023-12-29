@@ -294,6 +294,7 @@
 					"text": "var(--wp--preset--color--background)"
 				},
 				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
 					"letterSpacing": "0.05em"
 				}
 			},
