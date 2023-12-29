@@ -385,11 +385,6 @@
 			"area": "posts",
 			"name": "post-navigation-stacked",
 			"title": "Post Navigation Stacked"
-		},
-		{
-			"area": "posts",
-			"name": "loop",
-			"title": "Loop"
 		}
 	],
 	"version": 2

@@ -1,3 +1,11 @@
+<?php
+/**
+ * Title: Blog Post Loop
+ * Slug: ridge/template-index-blogging
+ * Categories: query, post, loop
+ * Block Types: core/query
+ */
+?>
 <!-- wp:separator {"className":"is-style-wide"} -->
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
 <!-- /wp:separator -->
