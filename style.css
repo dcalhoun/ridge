@@ -65,6 +65,11 @@ code:not(pre code) {
   padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--20);
 }
 
+.wp-block-code:has(.hljs) span {
+  display: initial;
+  overflow: initial;
+}
+
 .wp-block-code .hljs {
   background: none;
   padding: 0;
