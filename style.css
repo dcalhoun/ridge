@@ -50,6 +50,16 @@ code:not(pre > code) {
   padding: 0.125em;
 }
 
+/* Code */
+.wp-block-code {
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.wp-block-code code {
+  overflow-wrap: normal;
+}
+
 /* Image */
 /* Double `is-style-rounded` class to override apparent WPCOM collision */
 .wp-block-image.is-style-rounded.is-style-rounded img {

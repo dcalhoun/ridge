@@ -117,3 +117,16 @@ function ridge_block_styles() {
     ]);
 }
 add_action("init", "ridge_block_styles");
+
+/**
+ * Enable code block focus, allowing scrolling for keyboard users.
+ */
+if (!function_exists("ridge_code_block_tabindex")) {
+    function ridge_code_block_tabindex($block_content) {
+        $content = new WP_HTML_Tag_Processor($block_content);
+        $content->next_tag();
+        $content->set_attribute("tabindex", 0);
+        return $content->get_updated_html();
+    }
+}
+add_filter("render_block_core/code", "ridge_code_block_tabindex");
