@@ -42,7 +42,7 @@ body {
   color: var(--wp--preset--color--background);
 }
 
-code:not(pre > code) {
+code:not(pre code) {
   background-color: var(--wp--preset--color--shadow);
   border: 1px solid var(--wp--preset--color--outline);
   border-radius: var(--wp--custom--radius);
@@ -57,7 +57,13 @@ code:not(pre > code) {
 }
 
 .wp-block-code code {
+  display: initial;
   overflow-wrap: normal;
+}
+
+.hljs {
+  background: none;
+  overflow-x: initial;
 }
 
 /* Image */
