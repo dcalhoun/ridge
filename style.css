@@ -66,13 +66,6 @@ code:not(pre > code) {
   border-radius: var(--wp--custom--radius);
 }
 
-/* Navigation */
-@media (max-width: 599px) {
-  .wp-block-navigation {
-    font-size: var(--wp--preset--font-size--x-large);
-  }
-}
-
 /* Post Comments */
 .wp-block-post-comments-form textarea {
   background-color: var(--wp--preset--color--shadow);
@@ -90,7 +83,7 @@ code:not(pre > code) {
   white-space: nowrap;
 }
 
-/* Post Navigation Link */
+/* Post Navigation Link (Bar) */
 .wp-block-post-navigation-link.is-style-bar {
   width: 100%;
 }
@@ -146,7 +139,5 @@ code:not(pre > code) {
 
 /* Separator */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-  border-width: 1px;
-  opacity: 0.5;
-  width: clamp(4rem, 11vw, 12rem);
+  width: clamp(9rem, 11vw, 12rem);
 }

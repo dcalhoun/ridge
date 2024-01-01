@@ -249,7 +249,7 @@
 			"core/separator": {
 				"border": {
 					"bottom": {
-						"width": "1px"
+						"width": "0"
 					}
 				},
 				"color": {
