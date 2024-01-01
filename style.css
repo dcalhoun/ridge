@@ -56,7 +56,8 @@ code:not(pre code) {
   white-space: pre;
 }
 
-.wp-block-code code {
+/* Double `wp-block-code` class to override core collision */
+.wp-block-code.wp-block-code code {
   display: initial;
   overflow-wrap: normal;
 }
