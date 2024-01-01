@@ -61,8 +61,13 @@ code:not(pre code) {
   overflow-wrap: normal;
 }
 
-.hljs {
+.wp-block-code:has(.hljs) {
+  padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--20);
+}
+
+.wp-block-code .hljs {
   background: none;
+  padding: 0;
   overflow-x: initial;
 }
 
