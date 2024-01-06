@@ -188,6 +188,9 @@
 				},
 				"color": {
 					"background": "var(--wp--preset--color--shadow)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
 			"core/comment-author-name": {
