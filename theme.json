@@ -185,6 +185,11 @@
 					"background": "var(--wp--preset--color--shadow)"
 				}
 			},
+			"core/comments": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--alternate)"
+				}
+			},
 			"core/navigation": {
 				"elements": {
 					"link": {
