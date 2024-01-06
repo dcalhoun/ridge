@@ -130,3 +130,18 @@ if (!function_exists("ridge_code_block_tabindex")) {
     }
 }
 add_filter("render_block_core/code", "ridge_code_block_tabindex");
+
+/**
+ * Disable Jetpack sharing headline.
+ */
+if (!function_exists("ridge_no_likes_headline")):
+    function ridge_no_likes_headline($headline, $title, $module) {
+        if ("likes" === $module) {
+            return "";
+        }
+
+        return $heading;
+    }
+endif;
+
+add_filter("jetpack_sharing_headline_html", "ridge_no_likes_headline");
