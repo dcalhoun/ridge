@@ -57,22 +57,25 @@ add_action("wp_enqueue_scripts", "ridge_styles");
 /**
  * Disable the emojis to improve performance.
  */
-function disable_emojis() {
-    remove_action("wp_head", "print_emoji_detection_script", 7);
-    remove_action("admin_print_scripts", "print_emoji_detection_script");
-    remove_action("wp_print_styles", "print_emoji_styles");
-    remove_action("admin_print_styles", "print_emoji_styles");
-    remove_filter("the_content_feed", "wp_staticize_emoji");
-    remove_filter("comment_text_rss", "wp_staticize_emoji");
-    remove_filter("wp_mail", "wp_staticize_emoji_for_email");
-    add_filter(
-        "wp_resource_hints",
-        "disable_emojis_remove_dns_prefetch",
-        10,
-        2,
-    );
-}
-add_action("init", "disable_emojis");
+if (!function_exists("ridge_disable_emojis")):
+    function ridge_disable_emojis() {
+        remove_action("wp_head", "print_emoji_detection_script", 7);
+        remove_action("admin_print_scripts", "print_emoji_detection_script");
+        remove_action("wp_print_styles", "print_emoji_styles");
+        remove_action("admin_print_styles", "print_emoji_styles");
+        remove_filter("the_content_feed", "wp_staticize_emoji");
+        remove_filter("comment_text_rss", "wp_staticize_emoji");
+        remove_filter("wp_mail", "wp_staticize_emoji_for_email");
+        add_filter(
+            "wp_resource_hints",
+            "disable_emojis_remove_dns_prefetch",
+            10,
+            2,
+        );
+    }
+endif;
+
+add_action("init", "ridge_disable_emojis");
 
 /**
  * Remove emoji CDN hostname from DNS prefetching hints.
@@ -98,37 +101,41 @@ function disable_emojis_remove_dns_prefetch($urls, $relation_type) {
 /**
  * Register core block styles.
  */
-function ridge_block_styles() {
-    if (!function_exists("register_block_style")) {
-        return;
+if (!function_exists("ridge_block_styles")):
+    function ridge_block_styles() {
+        if (!function_exists("register_block_style")) {
+            return;
+        }
+
+        register_block_style("core/post-excerpt", [
+            "name" => "sans-link",
+            "label" => __("Sans Link", "ridge"),
+            "inline_style" =>
+                ".wp-block-post-excerpt.is-style-sans-link .wp-block-post-excerpt__more-text { display: none; }",
+        ]);
+
+        register_block_style("core/post-navigation-link", [
+            "name" => "bar",
+            "label" => __("Bar", "ridge"),
+            "style_handle" => "ridge-style",
+        ]);
     }
+endif;
 
-    register_block_style("core/post-excerpt", [
-        "name" => "sans-link",
-        "label" => __("Sans Link", "ridge"),
-        "inline_style" =>
-            ".wp-block-post-excerpt.is-style-sans-link .wp-block-post-excerpt__more-text { display: none; }",
-    ]);
-
-    register_block_style("core/post-navigation-link", [
-        "name" => "bar",
-        "label" => __("Bar", "ridge"),
-        "style_handle" => "ridge-style",
-    ]);
-}
 add_action("init", "ridge_block_styles");
 
 /**
  * Enable code block focus, allowing scrolling for keyboard users.
  */
-if (!function_exists("ridge_code_block_tabindex")) {
+if (!function_exists("ridge_code_block_tabindex")):
     function ridge_code_block_tabindex($block_content) {
         $content = new WP_HTML_Tag_Processor($block_content);
         $content->next_tag();
         $content->set_attribute("tabindex", 0);
         return $content->get_updated_html();
     }
-}
+endif;
+
 add_filter("render_block_core/code", "ridge_code_block_tabindex");
 
 /**
