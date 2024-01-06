@@ -176,6 +176,11 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/button": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
 			"core/code": {
 				"border": {
 					"color": "var(--wp--preset--color--outline)",
