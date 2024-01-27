@@ -337,6 +337,11 @@
 					"letterSpacing": "0.05em"
 				}
 			},
+			"caption": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--x-small)"
+				}
+			},
 			"h1": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
