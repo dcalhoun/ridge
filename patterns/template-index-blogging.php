@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Blog Post Loop
+ * Title: Blog Post List
  * Slug: ridge/template-index-blogging
- * Categories: query, post, loop
+ * Categories: query, post, loop, list
  * Block Types: core/query
  */
 ?>
