@@ -151,4 +151,4 @@ if (!function_exists("ridge_no_likes_headline")):
     }
 endif;
 
-add_filter("jetpack_sharing_headline_html", "ridge_no_likes_headline");
+add_filter("jetpack_sharing_headline_html", "ridge_no_likes_headline", 10, 3);
