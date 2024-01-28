@@ -147,13 +147,18 @@
 			],
 			"fontSizes": [
 				{
-					"name": "Small",
+					"name": "X-Small",
 					"size": "clamp(0.75rem, 0.75vw, 1rem)",
+					"slug": "x-small"
+				},
+				{
+					"name": "Small",
+					"size": "clamp(0.75rem, 0.926vw, 1rem)",
 					"slug": "small"
 				},
 				{
 					"name": "Medium",
-					"size": "clamp(1.125rem, 1.25vw, 1.625rem)",
+					"size": "clamp(1.125rem, 1.4vw, 1.5rem)",
 					"slug": "medium"
 				},
 				{
@@ -412,7 +417,7 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--primary)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
-			"lineHeight": "1.725"
+			"lineHeight": "clamp(1.1em, calc(2.1em + -0.4vw), 1.9em)"
 		}
 	},
 	"templateParts": [
