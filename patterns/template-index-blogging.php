@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Blog Post List
+ * Title: Post List - Title and Date
  * Slug: ridge/template-index-blogging
  * Categories: query, post, loop, list
  * Block Types: core/query
