@@ -34,12 +34,14 @@ archive.on("error", function (err) {
 
 archive.pipe(output);
 
+archive.directory(join(rootPath, "assets/"), "assets");
 archive.directory(join(rootPath, "parts/"), "parts");
 archive.directory(join(rootPath, "scripts/"), "scripts");
 archive.directory(join(rootPath, "templates/"), "templates");
 archive.file(join(rootPath, "functions.php"), { name: "functions.php" });
 archive.file(join(rootPath, "LICENSE"), { name: "LICENSE" });
 archive.file(join(rootPath, "README.md"), { name: "README.md" });
+archive.file(join(rootPath, "screenshot.png"), { name: "screenshot.png" });
 archive.file(join(rootPath, "style.css"), { name: "style.css" });
 archive.file(join(rootPath, "theme.json"), { name: "theme.json" });
 
