@@ -3,16 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "node bin/zip.js",
-    "export": "node bin/export.js",
+    "archive": "./scripts/archive.sh",
     "format": "prettier -w .",
+    "import": "./scripts/import.sh",
     "wp-env": "wp-env"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.19.1",
     "@wordpress/env": "^5.4.0",
-    "adm-zip": "^0.5.10",
-    "archiver": "^5.3.1",
     "prettier": "^2.7.1"
   }
 }
