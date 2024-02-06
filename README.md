@@ -1,6 +1,6 @@
 # Ridge
 
-A quiet WordPress theme.
+A simple, spacious theme for personal sites and blogs.
 
 ## Requirements
 
