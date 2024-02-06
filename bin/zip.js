@@ -36,7 +36,6 @@ archive.pipe(output);
 
 archive.directory(join(rootPath, "assets/"), "assets");
 archive.directory(join(rootPath, "parts/"), "parts");
-archive.directory(join(rootPath, "scripts/"), "scripts");
 archive.directory(join(rootPath, "templates/"), "templates");
 archive.file(join(rootPath, "functions.php"), { name: "functions.php" });
 archive.file(join(rootPath, "LICENSE"), { name: "LICENSE" });
