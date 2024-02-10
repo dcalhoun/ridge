@@ -5,12 +5,10 @@
   "scripts": {
     "archive": "./scripts/archive.sh",
     "format": "prettier -w .",
-    "import": "./scripts/import.sh",
-    "wp-env": "wp-env"
+    "import": "./scripts/import.sh"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.19.1",
-    "@wordpress/env": "^5.4.0",
     "prettier": "^2.7.1"
   }
 }

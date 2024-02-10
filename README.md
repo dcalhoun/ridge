@@ -13,9 +13,8 @@ A simple, spacious theme for personal sites and blogs.
 
 To get started with development:
 
-1. Set up a WordPress instance, we recommend [wp-env](https://developer.wordpress.org/block-editor/handbook/tutorials/devenv/) or [Local](https://localwp.com/) as an alternative to docker.
-2. Install the [Gutenberg plugin](https://wordpress.org/plugins/gutenberg/).
-3. Clone or download this repository into your `/wp-content/themes/` directory.
+1. Clone this repository.
+1. `npx @wp-now/wp-now start`
 
 ## Resources
 
