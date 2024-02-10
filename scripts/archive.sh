@@ -12,6 +12,7 @@ output="$rootPath/dist/ridge.zip"
 zip -r -9 "$output" \
   "$rootPath/assets" \
   "$rootPath/parts" \
+  "$rootPath/patterns" \
   "$rootPath/templates" \
   "$rootPath/functions.php" \
   "$rootPath/LICENSE" \
