@@ -54,6 +54,48 @@ endif;
 
 add_action("wp_enqueue_scripts", "ridge_styles");
 
+if (!function_exists("ridge_add_preconnect_links")):
+    /**
+     * Add preconnect links for Google Fonts.
+     *
+     * @since Ridge 1.0
+     *
+     * @return void
+     */
+    function ridge_add_preconnect_links() {
+        echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+        echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+    }
+endif;
+
+add_action("wp_head", "ridge_add_preconnect_links");
+
+if (!function_exists("ridge_load_fonts")):
+    /**
+     * Enqueue Google Fonts.
+     *
+     * @since Ridge 1.0
+     *
+     * @return void
+     */
+    function ridge_load_fonts() {
+        wp_enqueue_style(
+            "ridge-fonts",
+            "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&display=swap",
+            [],
+            null,
+        );
+        wp_enqueue_style(
+            "ridge-fonts",
+            "https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap",
+            [],
+            null,
+        );
+    }
+endif;
+
+add_action("wp_enqueue_scripts", "ridge_load_fonts");
+
 if (!function_exists("ridge_disable_emojis")):
     /**
      * Disable the emoji script and styles.
