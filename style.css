@@ -50,6 +50,14 @@ code:not(pre code) {
   padding: 0.125em;
 }
 
+.skip-link.screen-reader-text:focus {
+  background-color: var(--wp--preset--color--shadow);
+  font-family: var(--wp--preset--font-family--alternate);
+  font-weight: 500;
+  top: 8px;
+  left: 8px;
+}
+
 /* Code */
 .wp-block-code {
   overflow-x: auto;
