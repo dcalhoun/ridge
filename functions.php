@@ -54,10 +54,14 @@ endif;
 
 add_action("wp_enqueue_scripts", "ridge_styles");
 
-/**
- * Disable the emojis to improve performance.
- */
 if (!function_exists("ridge_disable_emojis")):
+    /**
+     * Disable the emoji script and styles.
+     *
+     * @since Ridge 1.0
+     *
+     * @return void
+     */
     function ridge_disable_emojis() {
         remove_action("wp_head", "print_emoji_detection_script", 7);
         remove_action("admin_print_scripts", "print_emoji_detection_script");
@@ -98,10 +102,14 @@ function disable_emojis_remove_dns_prefetch($urls, $relation_type) {
     return $urls;
 }
 
-/**
- * Register core block styles.
- */
 if (!function_exists("ridge_block_styles")):
+    /**
+     * Register block styles.
+     *
+     * @since Ridge 1.0
+     *
+     * @return void
+     */
     function ridge_block_styles() {
         if (!function_exists("register_block_style")) {
             return;
@@ -124,10 +132,13 @@ endif;
 
 add_action("init", "ridge_block_styles");
 
-/**
- * Enable code block focus, allowing scrolling for keyboard users.
- */
 if (!function_exists("ridge_code_block_tabindex")):
+    /**
+     * Enable code block focus, allowing scrolling for keyboard users.
+     *
+     * @param string $block_content The block content.
+     * @return string The updated block content.
+     */
     function ridge_code_block_tabindex($block_content) {
         $content = new WP_HTML_Tag_Processor($block_content);
         $content->next_tag();
@@ -138,10 +149,15 @@ endif;
 
 add_filter("render_block_core/code", "ridge_code_block_tabindex");
 
-/**
- * Disable Jetpack sharing headline.
- */
 if (!function_exists("ridge_no_likes_headline")):
+    /**
+     * Disable Jetpack sharing headline.
+     *
+     * @param string $headline The headline.
+     * @param string $title The title.
+     * @param string $module The module.
+     * @return string The headline.
+     */
     function ridge_no_likes_headline($headline, $title, $module) {
         if ("likes" === $module) {
             return "";
