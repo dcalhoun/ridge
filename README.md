@@ -1,6 +1,6 @@
 # Ridge
 
-A simple, spacious theme for personal sites and blogs.
+A simple, spacious WordPress theme for personal sites and blogs.
 
 ## Requirements
 
