@@ -105,6 +105,10 @@ code:not(pre code) {
   border-radius: var(--wp--custom--radius);
 }
 
+.wp-block-navigation a:where(:not(.wp-element-button)):hover {
+  color: var(--wp--preset--color--primary) !important;
+}
+
 /* Post Comments */
 .wp-block-post-comments-form textarea {
   background-color: var(--wp--preset--color--shadow);

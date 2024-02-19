@@ -19,9 +19,6 @@ if (!function_exists("ridge_setup")):
     function ridge_setup() {
         // Enqueue editor styles.
         add_editor_style("style.css");
-
-        // Add support for Global Style settings.
-        add_theme_support("appearance-tools");
     }
 endif;
 

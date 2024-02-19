@@ -11,6 +11,7 @@
 		}
 	],
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"defaultDuotone": false,
 			"defaultGradients": false,
@@ -90,7 +91,6 @@
 			"wideSize": "64rem"
 		},
 		"spacing": {
-			"blockGap": true,
 			"spacingScale": {
 				"steps": 7
 			},
@@ -183,6 +183,7 @@
 		"blocks": {
 			"core/button": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--alternate)",
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
