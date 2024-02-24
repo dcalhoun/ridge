@@ -9,30 +9,80 @@
 
 <!-- wp:template-part {"slug":"header","area":"header"} /-->
 
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1,"align":"wide","fontSize":"xx-large"} -->
-<h1 class="wp-block-heading alignwide has-text-align-center has-xx-large-font-size">Ridge is a simple, spacious theme for personal <br>sites and blogs.</h1>
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
+<h1 class="wp-block-heading has-xx-large-font-size">Ridge, a theme.</h1>
 <!-- /wp:heading -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|60"} -->
-<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:image {"aspectRatio":"16/9","scale":"cover","className":"is-style-rounded"} -->
-<figure class="wp-block-image is-style-rounded"><img src="http://localhost:8881/wp-content/themes/ridge/assets/images/blue-ridge-mountatains.jpg" alt="" style="aspect-ratio:16/9;object-fit:cover"/><figcaption class="wp-element-caption">Blue Ridge Mountains of Shenandoah National Park by <a href="https://www.flickr.com/photos/40718898@N04/45869962751">Shutter Runner</a></figcaption></figure>
-<!-- /wp:image -->
-
 <!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in. Urna nunc id cursus metus aliquam eleifend mi. Maecenas accumsan lacus vel facilisis volutpat est velit. Donec ac odio tempor orci dapibus. Justo nec ultrices dui sapien eget mi proin sed. Convallis a cras semper auctor neque vitae tempus. </p>
+<p>A simple, spacious WordPress theme designed for personal sites and blogs.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Accumsan tortor posuere ac ut consequat. </p>
-<!-- /wp:paragraph -->
+<!-- wp:spacer {"height":"var:preset|spacing|70"} -->
+<div style="height:var(--wp--preset--spacing--70)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:group -->
 
-<!-- wp:paragraph -->
-<p>Accumsan in nisl nisi scelerisque eu ultrices. Neque vitae tempus quam pellentesque nec. Tellus in metus vulputate eu. Tempor orci eu lobortis elementum nibh tellus molestie. Eget duis at tellus at urna condimentum mattis pellentesque. Turpis in eu mi bibendum neque. Blandit aliquam etiam erat velit. Purus in massa tempor nec feugiat nisl pretium fusce. </p>
-<!-- /wp:paragraph --></div>
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading -->
+<h2 class="wp-block-heading">Latest</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"border":{"radius":"0.5rem"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"shadow","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-shadow-background-color has-background" style="border-radius:0.5rem;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:query {"queryId":10,"query":{"perPage":"1","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false}} -->
+<div class="wp-block-query"><!-- wp:post-template {"style":{"spacing":{"blockGap":"0"}}} -->
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-date {"format":"M j, Y"} /-->
+
+<!-- wp:post-excerpt {"className":"is-style-sans-link"} /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+<p>No posts yet.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading -->
+<h2 class="wp-block-heading">Notable</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"border":{"radius":"0.5rem"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"shadow","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-shadow-background-color has-background" style="border-radius:0.5rem;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:query {"queryId":13,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"only","inherit":false}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-date {"format":"M Y"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+<p>No posts yet.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"width":100,"className":"is-style-outline"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link wp-element-button" href="http://localhost:8881/?page_id=417">View all posts →</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading -->
+<h2 class="wp-block-heading">Topics</h2>
+<!-- /wp:heading -->
+
+<!-- wp:tag-cloud {"numberOfTags":12,"className":"is-style-outline"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","area":"footer"} /-->
