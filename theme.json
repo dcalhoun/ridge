@@ -80,6 +80,11 @@
 					"color": "#d0d4d0",
 					"name": "Outline",
 					"slug": "outline"
+				},
+				{
+					"color": "#898F89",
+					"name": "Subdued",
+					"slug": "subdued"
 				}
 			]
 		},
@@ -273,9 +278,10 @@
 			},
 			"core/post-template": {
 				"elements": {
-					"h2": {
+					"h3": {
 						"typography": {
-							"fontWeight": "normal"
+							"fontWeight": "normal",
+							"textTransform": "none"
 						}
 					},
 					"link": {
