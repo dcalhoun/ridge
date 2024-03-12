@@ -2,20 +2,22 @@
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
 <main class="wp-block-group"><!-- wp:group {"tagName":"article","style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"default"}} -->
-<article class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<article class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:post-title {"textAlign":"left","level":1,"fontSize":"xx-large"} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:post-terms {"term":"category"} /-->
 
-<!-- wp:paragraph -->
-<p>•</p>
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">•</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:post-date {"textAlign":"center"} /--></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:post-excerpt {"fontSize":"large"} /--></div>
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:post-excerpt {"className":"is-style-sans-link","fontSize":"large"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:post-content {"layout":{"type":"constrained","justifyContent":"center"}} /--></article>
