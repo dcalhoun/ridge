@@ -11,7 +11,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
-<h1 class="wp-block-heading has-xx-large-font-size">Ridge, a theme.</h1>
+<h1 class="wp-block-heading has-xx-large-font-size">Ridge, a theme</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
