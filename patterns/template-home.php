@@ -49,7 +49,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
-<h2 class="wp-block-heading">Notable</h2>
+<h2 class="wp-block-heading">Favorites</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"border":{"radius":"0.5rem"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"shadow","layout":{"type":"constrained"}} -->
