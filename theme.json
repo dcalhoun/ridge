@@ -173,7 +173,7 @@
 				},
 				{
 					"name": "XX-Large",
-					"size": "clamp(1.875rem, 10vw, 4.05rem)",
+					"size": "clamp(1.875rem, 10vw, 3.85rem)",
 					"slug": "xx-large"
 				}
 			]
@@ -278,6 +278,11 @@
 			},
 			"core/post-template": {
 				"elements": {
+					"h2": {
+						"typography": {
+							"fontWeight": "normal"
+						}
+					},
 					"link": {
 						"typography": {
 							"textDecoration": "none"
@@ -401,7 +406,8 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)",
 					"fontSize": "var(--wp--preset--font-size--x-large)",
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"lineHeight": "1.2"
 				}
 			},
 			"h3": {
