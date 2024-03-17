@@ -25,7 +25,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|subdued"}}}},"textColor":"subdued"} -->
-<h2 class="wp-block-heading has-subdued-color has-text-color has-link-color">Latest</h2>
+<h2 class="wp-block-heading has-subdued-color has-text-color has-link-color">Latest Post</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"border":{"radius":"0.5rem"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"shadow","layout":{"type":"constrained"}} -->
@@ -55,7 +55,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|subdued"}}}},"textColor":"subdued"} -->
-<h2 class="wp-block-heading has-subdued-color has-text-color has-link-color">Favorites</h2>
+<h2 class="wp-block-heading has-subdued-color has-text-color has-link-color">Favorite Posts</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"border":{"radius":"0.5rem"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"shadow","layout":{"type":"constrained"}} -->
