@@ -102,37 +102,37 @@
 			"spacingSizes": [
 				{
 					"name": "1",
-					"size": "min(20px, 1vw)",
+					"size": "min(20px, 2vw)",
 					"slug": "10"
 				},
 				{
 					"name": "2",
-					"size": "min(30px, 2vw)",
+					"size": "min(30px, 3vw)",
 					"slug": "20"
 				},
 				{
 					"name": "3",
-					"size": "min(40px, 4vw)",
+					"size": "min(40px, 5vw)",
 					"slug": "30"
 				},
 				{
 					"name": "4",
-					"size": "min(50px, 6vw)",
+					"size": "min(50px, 9vw)",
 					"slug": "40"
 				},
 				{
 					"name": "5",
-					"size": "min(60px, 10vw)",
+					"size": "min(60px, 15vw)",
 					"slug": "50"
 				},
 				{
 					"name": "6",
-					"size": "min(70px, 12vw)",
+					"size": "min(70px, 18vw)",
 					"slug": "60"
 				},
 				{
 					"name": "7",
-					"size": "min(80px, 14vw)",
+					"size": "min(80px, 21vw)",
 					"slug": "70"
 				}
 			]
